@@ -7,7 +7,7 @@ import Denomination from "./components/Denomination.jsx";
 const App = () => {
   return (
     <Provider store={store}>
-      <Router>
+      <Router basename="/denom_challenge/">
         <div className="app-container">
           <nav className="navbar">
             <Link to="/">Accueil</Link>
@@ -15,6 +15,7 @@ const App = () => {
           </nav>
           <Routes>
             <Route path="/" element={<Denomination />} />
+            <Route path="/params" element={<div>Paramètres</div>} />
           </Routes>
         </div>
       </Router>
