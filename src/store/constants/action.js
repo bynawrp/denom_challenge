@@ -1,0 +1,2 @@
+export const SET_AMOUNT = "SET_AMOUNT";
+export const SET_DENOMINATIONS = "SET_DENOMINATIONS";
